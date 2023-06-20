@@ -1,5 +1,6 @@
 <?php
 include "./config.php";
+session_start();
 
 if (!empty($_POST)) {
     $idMk = $_POST["namaMk"];
@@ -13,7 +14,7 @@ if (!empty($_POST)) {
         $idMk = $conn->insert_id;
     }
 
-    $sql = "INSERT INTO detailtugas (idMk, namaTugas, linkTugas, tglKumpul, idMhs) VALUES ('$idMk', '$namaTugas', '$linkTugas', NOW(), 1)";
+    $sql = "INSERT INTO detailtugas (idMk, namaTugas, linkTugas, tglKumpul, idMhs) VALUES ('$idMk', '$namaTugas', '$linkTugas', NOW(), '" . $_SESSION["idMhs"] . "')";
     $result = $conn->query($sql);
 
     if ($result) {
