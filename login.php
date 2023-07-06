@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="icon" href="https://www.iconarchive.com/download/i103365/paomedia/small-n-flat/calendar.1024.png" />
+    <link rel="icon" href="./img/logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/login.css" />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -14,6 +14,9 @@
 
 <body>
     <div class="container">
+        <div class="image">
+            <img src="./img/logo.png" alt="">
+        </div>
         <h2>Login</h2>
         <form>
             <input type="text" placeholder="Username" id="uname" />
